@@ -1,10 +1,10 @@
 "use client";
-import { useState, useEffect } from "react";
+import { Suspense, useState, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import * as searchClient from "./client";
 
-export default function Search() {
+function SearchContent() {
     const router = useRouter();
     const searchParams = useSearchParams();
     const criteriaFromUrl = searchParams.get("criteria") || "";
@@ -117,5 +117,13 @@ export default function Search() {
                 ))}
             </div>
         </div>
+    );
+}
+
+export default function Search() {
+    return (
+        <Suspense fallback={<p className="text-center mt-5">Loading...</p>}>
+            <SearchContent />
+        </Suspense>
     );
 }
