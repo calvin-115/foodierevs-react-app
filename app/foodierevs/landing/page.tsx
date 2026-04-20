@@ -25,7 +25,7 @@ export default function Landing() {
                         <h4>Team Members</h4>
                         <ul className="list-unstyled mb-0">
                             <li className="py-2">
-                                <strong>Kelby</strong> — Section 1
+                                <strong>Calvin</strong> — Section 1
                             </li>
                         </ul>
                     </div>
