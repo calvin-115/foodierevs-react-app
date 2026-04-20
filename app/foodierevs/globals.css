@@ -1,0 +1,175 @@
+:root {
+    --purple-dark: #1a1a2e;
+    --purple-mid: #16213e;
+    --purple-accent: #7b2ff7;
+    --purple-light: #9d4edd;
+    --purple-glow: #c77dff;
+    --purple-bg: #0f0f1a;
+    --purple-card: #1e1e30;
+    --purple-border: #2a2a45;
+    --purple-text: #e0e0e0;
+    --purple-muted: #8888aa;
+    --gold: #f0c040;
+}
+
+body {
+    background-color: var(--purple-bg) !important;
+    color: var(--purple-text) !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: var(--purple-dark) !important;
+    border-bottom: 2px solid var(--purple-accent);
+}
+
+.navbar-brand {
+    font-weight: 800 !important;
+}
+
+.navbar-brand .text-warning {
+    color: var(--purple-glow) !important;
+}
+
+.nav-link.active {
+    color: var(--purple-glow) !important;
+}
+
+.btn-warning {
+    background-color: var(--purple-accent) !important;
+    border-color: var(--purple-accent) !important;
+    color: #fff !important;
+}
+
+.btn-warning:hover {
+    background-color: var(--purple-light) !important;
+    border-color: var(--purple-light) !important;
+}
+
+.btn-outline-dark {
+    border-color: var(--purple-light) !important;
+    color: var(--purple-light) !important;
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--purple-light) !important;
+    color: #fff !important;
+}
+
+.btn-outline-warning {
+    border-color: var(--purple-accent) !important;
+    color: var(--purple-accent) !important;
+}
+
+.btn-outline-warning:hover {
+    background-color: var(--purple-accent) !important;
+    color: #fff !important;
+}
+
+.btn-outline-secondary {
+    border-color: var(--purple-muted) !important;
+    color: var(--purple-muted) !important;
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--purple-border) !important;
+    color: var(--purple-text) !important;
+}
+
+.card {
+    background-color: var(--purple-card) !important;
+    border: 1px solid var(--purple-border) !important;
+    color: var(--purple-text) !important;
+}
+
+.card-title {
+    color: #fff !important;
+}
+
+.form-control {
+    background-color: var(--purple-mid) !important;
+    border-color: var(--purple-border) !important;
+    color: var(--purple-text) !important;
+}
+
+.form-control:focus {
+    border-color: var(--purple-accent) !important;
+    box-shadow: 0 0 0 0.2rem rgba(123, 47, 247, 0.25) !important;
+}
+
+.form-control::placeholder {
+    color: var(--purple-muted) !important;
+}
+
+.form-label {
+    color: var(--purple-text) !important;
+}
+
+.form-check-label {
+    color: var(--purple-text) !important;
+}
+
+.form-select {
+    background-color: var(--purple-mid) !important;
+    border-color: var(--purple-border) !important;
+    color: var(--purple-text) !important;
+}
+
+.badge.bg-warning {
+    background-color: var(--purple-accent) !important;
+    color: #fff !important;
+}
+
+.alert-danger {
+    background-color: #2e1a1a !important;
+    border-color: #5c2a2a !important;
+    color: #ff6b6b !important;
+}
+
+.text-muted {
+    color: var(--purple-muted) !important;
+}
+
+.text-warning {
+    color: var(--purple-glow) !important;
+}
+
+a {
+    color: var(--purple-glow);
+}
+
+a:hover {
+    color: var(--purple-light);
+}
+
+.star-filled {
+    color: var(--gold);
+}
+
+.star-empty {
+    color: var(--purple-border);
+}
+
+.movie-poster {
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.movie-poster:hover {
+    transform: scale(1.03);
+}
+
+.search-result-card {
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.search-result-card:hover {
+    border-color: var(--purple-accent) !important;
+}
+
+.profile-section {
+    border-left: 3px solid var(--purple-accent);
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+}
